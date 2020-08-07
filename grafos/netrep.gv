@@ -1,0 +1,13 @@
+graph G {
+	edge [len=4, decorate=True];
+	z1--z2 [label="C(z1,z2)"];
+	z1--z3 [label="C(z1,z3)"];
+	z1--z4 [label="C(z1,z4)"];
+	z2--z3 [label="C(z2,z3)"];
+	z2--z4 [label="C(z2,z4)"];
+	z3--z4 [label="C(z3,z4)"];
+	z1[shape = "record", label = "{z1|a11,a12,...,a1n1}"];
+	z2[shape = "record", label = "{z2|a21,a22,...,a2n2}"];
+	z3[shape = "record", label = "{z3|a31,a32,...,a3n3}"];
+	z4[shape = "record", label = "{z4|a41,a42,...,a4n4}"];
+}
