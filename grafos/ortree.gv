@@ -1,0 +1,30 @@
+digraph G {
+	root->a11;
+	root->a12;
+	root->dots1;
+	root->a1n1
+	a12->a21;
+	a12->a22;
+	a12->dots2;
+	a12->dots3;
+	a12->a2n2;
+	a22->a31;
+	a22->a32;
+	a22->dots4;
+	a22->dots5;
+	a22->a3n3;
+	a11[shape="record",label="a11"];
+	a12[shape="record",label="a12"];
+	dots1[shape="plaintext",label="..."];
+	dots2[shape="plaintext",label="..."];
+	dots3[shape="plaintext",label="..."];
+	a1n1[shape="record", label="a1n1"];
+	a21[shape="record",label="{a21|C(z1,z2):X}"];
+	a22[shape="record", label="{a22|C(z1,z2):V}"];
+	a2n2[shape="record", label="{a2n2|C(z1,z2):V}"];
+	a31[shape="record",label="{a31|C(z1,z3):V|C(z2,z3):X}"];
+	a32[shape="record", label="{a32|C(z1,z3):V|C(z2,z3):V}"];
+	a3n3[shape="record", label="{a3n3|C(z1,z3):X|}"];
+	dots4[shape="plaintext",label="..."];
+	dots5[shape="plaintext",label="..."];
+}
