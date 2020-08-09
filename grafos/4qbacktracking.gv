@@ -1,0 +1,32 @@
+digraph G {
+	root->a1;
+	a1->a11;
+	a1->a12;
+	a1->a13;
+	a1->a14;
+	a13->a131;
+	a13->a132;
+	a13->a133;
+	a13->a134;
+	a14->a141;
+	a14->a142;
+	a142->a1421;
+	a142->a1422;
+	a142->a1423;
+	a142->a1424;
+	a1[shape="record",label="1"];
+	a11[shape="record",label="{1|C(z1,z2): X}"];
+	a12[shape="record",label="{2|C(z1,z2): X}"];
+	a13[shape="record",label="{3|C(z1,z2): V}"];
+	a14[shape="record",label="{4|C(z1,z2): V}"];
+	a131[shape="record",label="{1|C(z1,z2): X}"];
+	a132[shape="record",label="{2|C(z1,z3): V|C(z2,z3): X}"];
+	a133[shape="record",label="{3|C(z1,z3): V|C(z2,z3): X}"];
+	a134[shape="record",label="{4|C(z1,z3): V|C(z2,z3): X}"];
+	a141[shape="record",label="{1|C(z1,z3): X}"];
+	a142[shape="record",label="{2|C(z1,z3): V|C(z2,z3): V}"];
+	a1421[shape="record",label="{1|C(z1,z4): X}"];
+	a1422[shape="record",label="{2|C(z1,z4): V|C(z2,z4): X}"];
+	a1423[shape="record",label="{3|C(z1,z4): V|C(z2,z4): V|C(z3,z4): X}"];
+	a1424[shape="record",label="{4|C(z1,z4): X}"];
+}
